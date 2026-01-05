@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Social Hub</title>
+
+<!-- Font Awesome for real logos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(270deg, #00ffcc, #00ff00, #00ffff, #39ff14);
+    background-size: 800% 800%;
+    animation: neonBG 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes neonBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #00ffcc;
+}
+
+h1 {
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc;
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px auto;
+    width: 260px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 0 20px currentColor;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px currentColor;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: #25D366;
+}
+
+.telegram {
+    background: #0088cc;
+    color: #0088cc;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    color: #ff4ecd;
+}
+
+.social-btn i {
+    font-size: 28px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>CONNECT WITH ME</h1>
+
+    <!-- WhatsApp -->
+    <a class="social-btn whatsapp" 
+       href="https://wa.me/918921515953" 
+       target="_blank">
+       <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <!-- Telegram -->
+    <a class="social-btn telegram" 
+       href="https://t.me/televisionmarket" 
+       target="_blank">
+       <i class="fab fa-telegram"></i> Telegram
+    </a>
+
+    <!-- Instagram -->
+    <a class="social-btn instagram" 
+       href="https://ig.me/m/c.r.i.s.t.o.w" 
+       target="_blank">
+       <i class="fab fa-instagram"></i> Instagram
+    </a>
+</div>
+
+</body>
+</html>
